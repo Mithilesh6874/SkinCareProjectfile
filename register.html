@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="register.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <form class="login-form" id="signup-form">
+        <p class="heading">Sign Up</p>
+        <p class="paragraph">Sign Up your account</p>
+        <div class="input-group">
+          <input
+            required=""
+            placeholder="Username"
+            id="username"
+            name="username"
+            type="text"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            required=""
+            placeholder="Password"
+            name="password"
+            id="password"
+            type="password"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            required=""
+            placeholder="Confirm Password"
+            name="confirm_password"
+            id="confirm_password"
+            type="password"
+          />
+        </div>
+        <button type="submit">Sign Up</button>
+        <div class="bottom-text">
+          <p>Already have an account? <a href="./loginpage.html">Login</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Script For Pop Up -->
+    <script>
+      document
+        .getElementById("signup-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          // Get the form inputs
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          var confirm_password =
+            document.getElementById("confirm_password").value;
+
+          // Perform validation
+          if (password !== confirm_password) {
+            // Passwords do not match
+            showPopup("Error", "Passwords do not match");
+          } else {
+            // Sign up successful (for demonstration, we'll just show a success message)
+            showPopup("Success", "Sign up successful!");
+
+            setTimeout(function () {
+              window.location.href = "./loginpage.html";
+            }, 3000);
+          }
+        });
+
+      // Function to show a popup
+      function showPopup(title, message) {
+        // Create popup elements
+        var popupOverlay = document.createElement("div");
+        popupOverlay.classList.add("popup-overlay");
+
+        var popup = document.createElement("div");
+        popup.classList.add("popup");
+        popup.innerHTML = `
+          <div class="popup-content">
+            <h2>${title}</h2>
+            <p>${message}</p>
+            <button class="close-btn">Close</button>
+          </div>
+        `;
+
+        // Append popup to the body
+        document.body.appendChild(popupOverlay);
+        document.body.appendChild(popup);
+
+        // Close popup when close button is clicked
+        popup
+          .querySelector(".close-btn")
+          .addEventListener("click", function () {
+            closePopup();
+          });
+
+        // Function to close the popup
+        function closePopup() {
+          document.body.removeChild(popupOverlay);
+          document.body.removeChild(popup);
+        }
+      }
+    </script>
+  </body>
+</html>

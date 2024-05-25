@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="product4.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shop By Concern</title>
+  </head>
+  <body>
+    <label class="logo">GM SKINCARE</label>
+    <div class="InputContainer">
+      <input
+        placeholder="Search.."
+        id="input"
+        class="input"
+        name="text"
+        type="text"
+        oninput="filterProducts()"
+      />
+    </div>
+    <div class="heading">
+      <h>Shop by Concern for Acne</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://earthrhythm.com/cdn/shop/products/PhytoClearMoisturiser.jpg?v=1666941641&width=600);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Phyto clear Moisturizer</p>
+              <p class="text-body">380 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">300 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://images-static.nykaa.com/media/catalog/product/2/d/2d39ad78908010016689_1.jpg?tr=w-750);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Rivona Moisturizer</p>
+              <p class="text-body">280 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">400 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://withinbeauty.com/cdn/shop/files/DAILYDEWGELMOISTURISER.jpg?v=1705070407&width=713);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Within Moisturizer</p>
+              <p class="text-body">520 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">1200 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://foxtale.in/cdn/shop/files/SuperGlowMoisturizer-19_3.jpg?v=1706530044&width=600);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Foxtale Moisturizer</p>
+              <p class="text-body">230 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">420 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="heading1">
+      <h>Shop by Concern Acne Marks</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://images-static.nykaa.com/media/catalog/product/7/7/776a7148904311901778_0712231.jpg);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Wow Serum</p>
+              <p class="text-body">380 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">200 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://saturn.health/cdn/shop/files/alphaarbutin-min_da7380a8-e6b3-4414-aca8-8ce8d28954a7_900x.jpg?v=1690688444);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Saturn</p>
+              <p class="text-body">380 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">450 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://www.myglamm.com/_next/image?url=https%3A%2F%2Ffiles.myglamm.com%2Fsite-images%2F400x400%2Fvitc2.jpg&w=640&q=75);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Myglamm Serum</p>
+              <p class="text-body">380 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">700 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://discoverpilgrim.com/cdn/shop/products/alpha-arbutin-vitamin-c-brightening-serum-484647.jpg?v=1683281533&width=600);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Pilgrim Serum</p>
+              <p class="text-body">30 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">620 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading1">
+      <h>Shop by Concern for Open Pores</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://cdn3.foxy.in/pictures/product/image/13384/26124/the-face-shop-real-nature-lemon-face-mask.jpg?width=720&format=webp);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Lemon Citron Mask</p>
+              <p class="text-body">face mask</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">80 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEBUQEhAVFRUVFRUYFRMVFRUWFxcVFRcWFxUSFRcYHSkgGBolGxUXITEhJSkrLi4uFx8zODMtNyktLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLSstLS0tLTAtLSstLy8tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAwQCBQYBB//EAEEQAAEDAgMFBAcGBAQHAAAAAAEAAhEDIQQSMQVBUWGREyJxgQYyUqGx0fAUI1OSweEzQmJyFWOC8SRDVHOissP/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAgMBBAUG/8QAPBEAAgECAgYGCAQGAwEAAAAAAAECAxEhMQQSQVFhoRNxgZGx8AUUIjKSweHiUlPR8RYjM0JDYhUkcgb/2gAMAwEAAhEDEQA/APuKIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIir4vEMpsNSo4Na25cdBuQw3YsIudqemmCGlUu/tp1PiQAvKHphhnua0Z5cQBLbSTA38VDpIbyr1illrLvOjRaVri4ySeqt0m+Kx0hsapfRQtCOKx0gsTIqVSoqz6qz0gsbZFpC88+qyaTzTpBY3KLWslTsCdILFtFA0L2U1zFiZFWc5RPes64sXkWpqVDxKiNQ8T1TXFjdoq+DqlzATrcdFYU07mAiIgCIiAIiIAiIgCje8AS4gDnYXtvWGKxDabS9xsOpO4DmtBiMY+oYOh0pj9TvWnpWmxo+znLde3a34WTb2J4k4wvic76X7LpCp21BvdcYqADu5txFog303+K02zaZ7eiWG3aMBa7X1m3Hlu5Lv24RtRrmVG2LYLZ3Hw+guJ/w04fG06b7/eU8jhbO3O2D5E3G7zvr6NWdVe1nfZhyx5nM0zRYwqKcVg2ux3+fjxeP0SjTVxjVhTYpFtHUZ6VE9yPeq9V6yDGo9V3HmvHuWI8EBYw+Ge4SIiYuYmNdAp6eCMjPBHAEmTuBtoo6FZzRA0Vhld3H3KacSOJLUoeyAOUwPcF42m7eB5Gf0Cya88VlmKy3BjE8WDnL1xUL3KAD3KB7l69yhc5AYvPNYeaErJqyZNlsz+H5lW1V2d6nmVaV0ciDCIiyAiIgCIiAIiIDnPSHEntGsFwwBxHNxi/g2equUHNLBlvpyM75BVDDkuxNQx/zHC/9Fh7gFsa/K64E5ycp1N7a7sFyW7M2EskYk3nf+m/65KGthmVMoqNnLUa5p3tc0yHA+7nK8qvtu8ZmI5/NZUmusbDvN1N4kbuPy8hCnCpJ60dmIlZqzNqF5mXj3KsyrqAutrldiY+Cdm32VHTqD9zpa2vFeVCSQG8JPwCgqy1brHqM6uNhUDB/KF53OAUIpuNo3CTMQbHx57lZbhgRHO+uo8fBVqrVnfUj33Xyx/czqpZs9p0wRYL11M8eg+anncN2/cFCKg3vnyA/dW1JRgkpPHfe3zT5MisckeMzb1KCViw2GvncrILMFdJpt+eoGJUT4UpWLmKV2CARwSG+yFm5iiJUdZmbFR1d9/+H00vr4fupy2/Rel6NWIN7XclKzyVi/gPU8yrKr4P1fMqwtyOSKGERFIBERAEREAREQHJ1TkxlQG0ua4XIkOAuCOcjyKvmmA4wRe8axbnu3+ax9JsCSBiGCXUwczRq5mpjmDfqquC2o17BEEnfPx+ty8/pUeim4vJttdrvh327E3hibEcVcyrk6fQCzY5xqNzOJu3W6zdS6ayd6wptl45fEE/Ncr+ZGWebWF8M+fmxfgbOpUWulwda/gpqlRQyc9tfrqu9UlK2BRFLaXsNTc4Seh3qapTghwkaCOvzKnpkFoP14LGo+xWx0EFC/bfnhuI6zbM20RH6plgBonrNvErKmICjrPADp4fX6K+WrCF7Ww+vnncrxbsVsTiJEDcoAfr68VkBeAQfD6upHMvIXmqnSV/aed7YW2bMMDZVkrFfau02Yah2jyBcNaLmXGYAAu4wCYFzC5NvpAHl7n1HDIA5weHMLQQYOVwECzrxFitz6abOdVw7HsN6Ly+CSA5rqdSk8Zm3baoTmFxC4DE4B7nDM8tpugFnbYirIGpBfBJJaG2AgF9zIjo1acZwjCTwsvNtvA5uk1ZQkd5s70iptp03ue5zKhyMAZUe/PDu7kDS+RkcCCLZTwWxd6R4URmq5M1RtIB9OoxwqOaXNa5r2gtBaCQ4gC2q4fBbKJe0Znii2sK75fW7URSrMquD2HMM2ZjomZz+0AttWwGH7UONdj8OKzqj21jVqvLThK2Hq0nOeCXN+9puAc4wHOFhAV2gxkoNSbaTw/Ts2fJYFsamsro6uttKi2oKLnw8loDYOr21HtvEerRqH/T4KnR23h6haGvMVDFN5p1W06hOgp1XNDHzugmd0rncRsX700q2KaWtfTpiS/tjSNDE0WhxI71T/i2jNJnISbyFJSoh5omu5hb2lI5hWx8VHUxTqUy3CHKyifUcJLgOBW5qp7yWuzaM23QeW5XPh5AY51GsxjidA172BpJ3XvuW2oiy5XB7LpMoYdzMRmfTqU801a76Lu89jg2m6Wt0eWkNEOa24C6yg2yolg8CyDbzLuE9XzU6hwvq+ZUy3qfuog8wiIpmAiIgCIiAIiIAue2h6Nsc51Si7snm5AE03O4ubuPMR5roUUKlONRWkrmU2sjixicTROWrQf/AHNaajN2jmiw8YUdHapNQQHSCwPlhaGguDRmLgImbcdy7hU6tN33mZzSwgZW5YLSBckknNeCLCI3rnv0ZS38l55FvSs0j3q3RBzGJ8PG0rW5lt8N608SVq+/hfcWWLsZWgAfW9e0qZN3a8Nw5LKVnmAEldRQSxeS2bCls57EekTmPc0sBhxA1GhIA8VscLUfUGZ1Isk6EydBujlosG7PpurGuWAndO4jeBxU+IruNhYb/wDfoufVq6sHKq21fBJYvllzI04SvizMYS8yOi97COJULmwvPtBsAb7+S1lW0eGDp6u6zvj587rrSe0nB5eS1GJ9G8O92bK5p35XFo6aDyhbVr5E8VlK2lKM4p5orlTjLCSK2EwFOm0sawQdZlxPIl0yOSn7Jvst0jQacPBZSkqWtYkopKyMXMBuQOgWPZN1yjSJgaCQB0J6lZyhKzrGbFd9FkzkbNrwJtopWaLx5WLTZVylgZSLuF9XzKmUGE9XzKnXVo/049SKJZhERWGAiIgCIiAIiIAiIgCixHqO8D8FKosR6jvA/BYlkDlGLcUHDP4W+vetTTC2eFZN/wCqp7nOXnaLcmmt6+f79huYbTaMCxcJdB9UAT47lnT0UDXwC6dT9fourWnGKV8s31LHxsa9sSI19Rw5WA3fBeFsgfXhHJKlORaxtcbiDvCxDCSHE3I3WkcgZXEmpyXt+1u6n19iytd57FcrbDxzTcz9WWLhH1wVkgxYfQuqxYeHz6Ba+k0XH3U3fffPHrvmlsxuSi95FjMY9gp5KefM4gtBAdAa4jLNpmNd0+C1uG9IXF7WOpSXUQ/uA+vvaCTEHQTBJIC3D3luQQYzQ6GlxjK4zYWuBdUzXqkQWEzALcpAghskmOJcOXDeunRqKNOKkruy77EHTk3dMwxW2svZOaBkqXEwXOaXNDSxuYG4cDYONxIbqjPSCmWCpkcGmQHHL60VCG67+zIHNzRxi1RL5uIEVO6BA7r8rBMaEdYWAxFS3rG34bh3u792eAub8tbGZ9LHcOinvRD/AIwXU3uZSIc2nmaHkQ7uscAcpJFqjffwvE/b+Rzm1aRYZdlbILsraYeS6+UGZ36RzicVq5yy2JF4F5iZOazdQIPA8QpDXqZQMpzdo4Ohj4gZoIOU2sLp00fw8zPQz2Mj2dtQVnPAaRlyQSCJD2h1p1iTfTQayBcc5VXPqB4BkiXCcu4FuW4adQTw01UlZ6pqTTyMqDVrmz2ee55lWlS2Ufu/Mq6u3Q/pR6l4GtLNhERXEQiIgCIiAIiIAiIgCixHqO8D8FKoq/qu8D8FiWTBzVILZ4LQj+qp73uWvphbCk6HeJP7rzegVFZ3/wBfH6m7UTuu0uh8NngF5WZlaOSjY+xnmp81y3iJH6/XNdWVpwtfNW6s3zsl1mu8GU2nhPMwIWVNnE6WEcFjUnW/+68Lo6rhKoou0rtdye52u+CTv9Lrbiw2vAgDeqpdxB1vGnivO0hsDwHvUrCWiDfiDp0VlSuqyScrJLcml5t3DVtiYufFNzhlkZYmzbkC8Hmqgx7ozRSgzvdo3IXXncCbkDdor9LLldLRlj1Tp71hQrUSJyN1izNSQbaWsDqupotJSpRyy3X28VfvI6yV20VKmNcBBFPNmgjvQBxmeJb16etxrtPut0mXQBIbOvFzeuvDMbVwpduzGZ+7M2BLpMXsL+XEKNm2MFFoANv4R4zEZb3GnJbPq2Ozu+hDp6e7wPBjnWEUiSQBciZIjeePitlhKTiD2jADNoJ0jxKo/wCJ4QEy0AtufuiInKNY/rHv4K3gtrUarstNxcQL914jTUkW1+oU4aNFP2kn2L9CM60XhEsVKDQ0mNxWkxT7nyXQVfVPgfguYxru8fJc70kowcbJLqwLKN3c3exT90P7nfFbBa7YX8EeLvitiunov9GHUvApn7zCIivIhERAEREAREQBERAFFW9V3gfgpVHW9U+B+CxLIHOsV6ncEcLj4H5+SoAq0x8GV4zQaqje+WHh5fXY6NRMtMIIuPrerHrDgRcHmqVJytUX7l36LTvCXU+Pau9PtNeauro8xFRrWl73ZeIPHl+y0mJ2wzdJjwFvO6t7X2cao7ziIkN3iJ3geX0Fq8D6NBr+0qPzgerT/lni4b/DT4LU0ujGr7yw253b3tL9t2GWu5VU7R7zc4RpLG1C096IbeQDoSrLvLwTMZ+fxWTaZ4qlUo21aUWl5xx355/Ivu9rMacQ4OEggd21+SkZUAcSKZBMAkZd2m9c16U0S51PuOcAXzkBJu1seC50YE5v4NaP+2eW/r167FLTXSjqauXHi/8AV+Jt09EjUjruWfD6rwPpPbf5Z93K/wBcEOIAj7s/+NtOfP3L54cF/kVdPZ39NFXfgv8AIrfkd00VkfSknsXxfaTfo+C/u5fcfTG1wTGSJ1JjqVQNes2qe7mZmMZQ1stLZmTOhgaiZJ5Dg6OC1+4rcpYffa/1fessTgnEDLRq85YT+ijP0lLDDul9pKOgQx9rl9x9CZiXOzBzC0ZTcxGmllocae+fL9FzGEwbw+meycIqMPqERDhfRdPivXPl+i0tL0p1krq1r7b/ACRXU0dUXaLvfzxN7sI/cCeLvissRtnDss6uybWBDjfSwkr5t6Q1qmdzDUd2QjuZjlBLWk93if1Oi19GlabN4gwOXe4D5ruaLP8AkQ/8rwRwNI0txqSilk/Pls+gbW9NsPSH3c1XcgWtFpBLiPgCpvQzEVa1B1eq4k1Kji0aBrWgMDWjcJafjqvmdUSe7ETrqYjXw+ZX13YGENLC0qZ1DBP9x7zh1JV1ObnLqKNFrVK1VuWSWzezZIiK86QREQBERAFT2jWc1mZkTI14K4q2PbNM+XxUKqbg0txlOzNRh9unNlqCOB3e7Rbjtg5hIO4rQPoDeLaHw3ps52QlgfLTMDQtncZ1HNcWGk1aXvO62pvFcU3jbv34JM2ZU4yyz5GBKlLrqs5yzrPuuBo7tHuNqaxLBqEHML+0BvHEDiPfffCuU3WDhcHQjSFqO1VrAYoA5T6pPQnf9ePGero9aL9mbs9j2dT+T7NiKZRaxRt3E5fHh8FSYc+WAf6tw4HyVwtcLtPyKgO0QLOZB8FbpcYykulbiuq/c1lxw78yuF9iueDS/wBXWdMFxgbuZHQqF+0qXslYMxz392kyB7Wg6rSjVoqpZT1nuhFtvvSSXFk3CVsVbrPMdimU3HO8NtMk7hlBM8Jc3qqlPa9Bxa0VWkugNAm5M2HOx6KzVo/yuh/EkazB0O7ToFGMOyZ7Nk8crd1xu5LMpx1nrJp3e1YfrbmLSwtYwrbTosEuqtAMQZsc0lsEazBiOCxZtegZiqDAk2MxIbpEm7mjxIU5pNNi1toiwtEx8T1WAwtOCOzZBsRlbBHAiFHXhx70Z1ZcOZC7bFAAE1WwQSDe4GaSLadx3Ret2vQJgVmk8BM793kp3UWWJY22hLRYDcOGqq1Aye6xo5hoB9ynrQSvZ96/Qxab3ee0lqVrqGpdx8l41t1lFz5LVqTwLklc5H0lxLG1XBxv3e7vJhpnlItu0WootqVfWEM1DdAbWuNf30Wz27s/Pi6jjp3OP4Y4LKnhy5wpMEZjoAOFzyG+efX0ejz/AOvC/wCFeB5DS4znpE08tZqy24lj0b2b2uJbT1Y0hzwIiG3gzrJyjzX1ML59h9nnDw6i8CoLl0WM6tcBq3466rsdibQ7eg2qQGuMhzQZyuaSHD3e9XaFpFOqnq9fWt51tH0WVGn7Wbz4bl3GxREW8XBERAEREAUGLcAx0uDbRJ0vYfFTqrtA/dkZZm3hzWGDnaVdziARuHvWt2nXLcTSaDHeaCNZBI14DRdE6kIJEaG8bhNlyba32nEtNNtmQSeDWmXT7+oXCr07YPHZ53m7Td2bFz1YxJuqLnK1jDdefpuyNmWZC569Y5YtpkqZlEq3WMWNjg8c5ojUcCrrazXiC2D+YeS1NNTgq+nptSEdV4x3P9fPCxU6abui22k2bBvQKQuPBVe0O+/1xUja/Lo79irYaTTyvbzus/H64cHmYPdJleSj3XkLDMtKUrt43LEjOVHVrgLx71RrmUUzKiZPxJcY3LNr7kSBByyZMuy5oAGsC/XgqrLFeUHxVe5+bKHNyNbEuLmtzkzp6mUQRMuurqUekbTaWF7vIhUeqlYt5HNh2fMw3MgSAf5mltiOR62gyuF1S2zSogPNMvpEUy4uLj2b8zc7hVDic3d/miQTqVcqmDx5pp1HobLWUurerXT7yNCes8jS43A1KlVwa2GmO+RaYGgGpEcgtngNmspC13HUk3O/UbuQt4qzTl1OLRmJ0v4TpHJZUmcwfGR8JVlWrNwhBPDVjw2LPf52lNPR6cakp29q7x7dm7x4kr6QLSCN06b/AKCreh9Qitiae6abxrYuDmn/ANB0Vh78rfViRuII+P6Kt6IEdvifCh/9bfXFb3o9vp0sv2e/HcZqe6/O06tEReiNUIiIAiIgChxDCWODdSDE8d0qZEByuJ2bjKpNMubTpzBdq5w36fstpgtlUsPRc2mNWnM46uMHX5LbKDF/w3f2u+BWtHR4wbli3ji9nV5vxJ67atsOFLuS2r6d1o8RULWOcD6rXHoCVPiMcRJGJpvjSK2HBdc7jSgbt+/VeLUXqqx0ZzUXibhrVktB/iLoB7Zt4sa+GkWMz93FiNxOo8sKW1HHWoG3/wCowhta9mePRY6OXDvX6keljx7jdOdBXlZpcBDy3w+vqfArS4nHPExWY7wxGGE3PGkOE+asYDEOcW/ezve0Po1ABlfqWNEd7JvvPisqMl7WHeny+gdSMsCzUa9roz1njWwbzETY8/IeC8YahgTWFxctbv497QRPTdIN8FZByj073LuDoreUKdSpIOWsZiQ5rIgGZ9aQToeWgCAPcWiazbNknLBNiZg2NoMe0VsAUJTp+A6LiVKdFzTeo5wjQ+Mz+i8qKw4LAsUHUbLEklZGtxmLbTBJMkAHIC3MZOUQHEamyrbA2lnqU8QQWipRYWtzSw9pSFRtN5iIBeTmI3bhKh27Tb9opuLoNNry0ZC6c4LXgmNS1sNA38bBQYIihTpUSS4020xIBE9mwUS6Lx6s6m3VdHRpSouNSCu+3qt3bcc7PjrVJKbcZOyXV53m8xeONWl2FZrHVS+mQWvZUytaWyXFgAB3hpMmSRZtpKLz2bZ1DWg+Vp9y1Y2kzuu0yuMWcd0O3aQ7Xz3K5TrNLAWzGgncAYA/feI11ONNrVK6TmmrYY4vbtsrvLYvmZoRjCVk7m62d/DHifjqOasA94NGp4TpvcOH0FV2HXaaeUmC0k+INyp8ZjWAFzbOB1PDgJtefgtuhBaid9i5ZkJv2mY7SxGVhaXc/LUH/ZZ+iWELaTqxEGs7MB/QLM63P+pa/B4B+IcHPkUdSTY1ODR/TxPD3dc0RZdLQKLb6V9nHj1bt+LKqjsrHqIi6pSEREAREQBERAFFiGSxw4gjqFKiw1cHz3JBgggjUbwVMKr/AG3/AJiu2qYdjjLmNJ4kArH7JT/DZ+UfJeefoJ/jXw/U3PWt65nHNqO9p/UqRjne07qV132Rn4bfyj5J9lZ7DfyhQfoCX5i+H7jPra/DzOXDncT1KX4nquo+ys9hvQL37Mz2G9Ao/wAPS/MXw/cZ9cX4eZyhPMqF7zxPVdh9lp+w38oXn2Sn+Gz8o+Skv/n5L/Ivh+4etr8PM4s1ncT1XorP9o9V2f2On+Gz8rfkn2On+Gz8rfkp/wDBP8xfD9xj1tbuZyDHu4nqpWk8Sur+yM/Db+UfJBhWew3oFF+gZP8AyL4fuHra3HNNnivHSum+zM9hvQJ9lZ7DfyhQ/h6X5i+H7jPra3czkqtQjeqeIqnUnqu4OEp/hs/KPkgwdMGRTZPHK35KyPoFx/vXw/Uw9L4czndl7FqOYHlwZmvGUkxNpuItdbLD7DpghzyahHGA3xy7/OVuEXXp6BQhbC7W+77bXsuxGs6smERFuFYREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAf//Z);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Garnier Mask</p>
+              <p class="text-body">face mask</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">200 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://cdn3.foxy.in/pictures/product/image/62342/266577/lakme-blush-glow-pomegranate-sheet-mask-25ml.jpg?width=720&format=webp);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Lakme</p>
+              <p class="text-body">blush nd glow face mask</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">150 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://rukminim2.flixcart.com/image/400/500/kwb07m80/face-shaping-mask/x/8/z/7004835-himalaya-original-imag9ymhm8ggbjtq.jpeg?q=20&crop=false);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Himalaya Mask</p>
+              <p class="text-body">clear complexion</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">400 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading1">
+      <h>Shop by Concern Pigmentation</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://cdn.fcglcdn.com/brainbees/images/products/583x720/8931787a.webp);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Cetaphil Cleanser</p>
+              <p class="text-body">125 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">375 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://images.thedermaco.com/catalog/product/1/-/1-niacinamide_gentle_skin_cleanser_for_sensitive_dry_normal_skin_.jpg?auto=format&fit=contain&width=720&auto=compress);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Derma Cleanser</p>
+              <p class="text-body">125 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">300 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(data:image/jpeg;base64,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);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Skin Craft Cleanser</p>
+              <p class="text-body">200 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">400 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://www.garnier.in/-/media/project/loreal/brand-sites/garnier/apac/in/products/skin-naturals/micellar-water/vitamin-c-micellar-cleansing-water/125ml/8994993013852-n1.jpg?rev=70307d75c3bb4d04865e69bf4a385634?as=1&w=320&hash=854381184E553A64C3B4557451A324DD);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Garnier Skin Cleanser</p>
+              <p class="text-body">70 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">500 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script for the redirect checkout page -->
+    <script>
+      // Select all SVG icons with class "svg-icon"
+      const svgIcons = document.querySelectorAll(".svg-icon");
+      // Loop through each SVG icon
+      svgIcons.forEach((svgIcon) => {
+        // Add click event listener to each SVG icon
+        svgIcon.addEventListener("click", function () {
+          // Find the product details relative to the clicked SVG icon
+          const card = this.closest(".card");
+          const productNameElement = card.querySelector(".text-title");
+          const priceElement = card.querySelector(".text-price");
+
+          // Debugging: Log the elements found by the selectors
+          console.log("Product Name Element:", productNameElement);
+          console.log("Price Element:", priceElement);
+
+          // Check if elements are found
+          if (productNameElement && priceElement) {
+            // Get product name and price
+            const productName = productNameElement.textContent;
+            const priceString = priceElement.textContent;
+            // Extract numerical price from the string
+            const priceMatch = priceString.match(/\d+/); // Match any sequence of digits
+            const price = priceMatch ? parseInt(priceMatch[0]) : 0; // Parse matched digits as integer, default to 0 if no match
+
+            console.log("Product Name:", productName);
+            console.log("Price:", price);
+
+            // Store product details in localStorage
+            localStorage.setItem("productName", productName);
+            localStorage.setItem("price", price);
+
+            // Redirect to the checkout page
+            console.log("Redirecting to checkout page...");
+            window.location.href = "checkout.html";
+          } else {
+            console.log("Error: Product name or price element not found.");
+          }
+        });
+      });
+    </script>
+
+    <!-- Script For Seacrch bar and filter button-->
+    <script>
+      function filterProducts() {
+        const input = document.getElementById("input");
+        const filter = input.value.toUpperCase();
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach((card) => {
+          const title = card
+            .querySelector(".text-title")
+            .textContent.toUpperCase();
+          const isVisible = title.indexOf(filter) > -1;
+          card.style.display = isVisible ? "" : "none";
+        });
+      }
+    </script>
+  </body>
+</html>

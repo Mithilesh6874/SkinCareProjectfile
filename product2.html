@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="product2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Skin Type</title>
+  </head>
+  <body>
+    <label class="logo">GM SkinCARE</label>
+    <div class="InputContainer">
+      <input
+        placeholder="Search.."
+        id="input"
+        class="input"
+        name="text"
+        type="text"
+        oninput="filterProducts()"
+      />
+    </div>
+    <div class="heading">
+      <h>Dry Skin</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://www.ceraveindia.com/-/media/project/loreal/brand-sites/cerave/americas/in/scx/products/pdp/packshots/moisturising-lotion/moisturising-lotion-without-new/moisturising-lotion-473ml-lg.jpg?rev=c6e851f1e6ad47158eb532911b8f7580?w=500&hash=D8099CB0B0E12360A0CC5B3A5C15D522);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Cetafile Moisturizer</p>
+              <p class="text-body">380 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">250 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(data:image/jpeg;base64,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);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Sheet Mask</p>
+              <p class="text-body">Dry Skin</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">400 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://thephrase.in/cdn/shop/files/1_5f530116-8a2c-459b-99e9-c80df8bb8029.png?v=1688997118&width=600);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">The Phrase</p>
+              <p class="text-body">520 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">1200 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://images.thedermaco.com/catalog/product/1/-/1-niacinamide_gentle_skin_cleanser_for_sensitive_dry_normal_skin_.jpg?auto=format&fit=contain&width=720&auto=compress);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">The Drmaco</p>
+              <p class="text-body">230 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">420 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="heading1">
+      <h>Oily Skin</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://images.thedermaco.com/catalog/product/1/_/1__salicylic_oil-free_moisturizer_color_bg.jpg?auto=format&fit=contain&width=720&auto=compress);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Dermaco. Moisturizer</p>
+              <p class="text-body">380 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">200 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ELanAyEUSYuSwOxVTi4ZbNy-CAtromTgGw&usqp=CAU);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">garnier Sheet Mask</p>
+              <p class="text-body">Oily Skin Mask</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">450 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://biocule.com/cdn/shop/products/everglowfacewashtonerserum-6.png?v=1676995063&width=600);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Bio Culd Face Wash</p>
+              <p class="text-body">380 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">700 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(data:image/jpeg;base64,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);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Ordinary Serum</p>
+              <p class="text-body">30 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">620 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading1">
+      <h>Sensitive Skin</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://www.novology.com/cdn/shop/files/Sensitive_Skin_Regime_94160325-1479-4a51-b257-4778558fd394.jpg?v=1691582389);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Sensitive Skin Regume</p>
+              <p class="text-body">Face Cream</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">2000 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://beminimalist.co/cdn/shop/products/MinimalistSensitiveSkincareKit1200-1Copy2-min_720x.png?v=1658037677);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Minimalist Kit</p>
+              <p class="text-body">Serum, Cleanser, Moisturizer</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">800 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://trymoody.com/cdn/shop/files/DermaSootheCombo.jpg?v=1705129331&width=832);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Moody</p>
+              <p class="text-body">Moisturizer</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">200 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://dromenco.com/cdn/shop/files/Dromen-_-Co-Manuka-Honey-_-Yoghurt-Serum-Moisturiser-Dromen-_-Co-1685618423_600x.jpg?v=1707150655);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Dromenco</p>
+              <p class="text-body">Manuka Honey Yogurt</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">400 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading1">
+      <h>Normal & Combination Skin</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://peaucare.in/cdn/shop/files/AZPeau.jpg?v=1705062433&width=800);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">AZ peau face serum</p>
+              <p class="text-body">125 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">375 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://neudeSkin.com/cdn/shop/files/SkinGenesis_image3.jpg?v=1701781518&width=990);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Neude</p>
+              <p class="text-body">125 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">300 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://consciouschemist.com/cdn/shop/files/097A8035_2x_717edd24-a6f0-4c11-a633-8921e3ebead5_800x.jpg?v=1695834394);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Turbiom</p>
+              <p class="text-body">200 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">400 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://neudeSkin.com/cdn/shop/files/Combo1_MainImage.jpg?v=1696575074&width=990);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Neude</p>
+              <p class="text-body">70 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">500 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script for the redirect checkout page -->
+    <script>
+      // Select all SVG icons with class "svg-icon"
+      const svgIcons = document.querySelectorAll(".svg-icon");
+      // Loop through each SVG icon
+      svgIcons.forEach((svgIcon) => {
+        // Add click event listener to each SVG icon
+        svgIcon.addEventListener("click", function () {
+          // Find the product details relative to the clicked SVG icon
+          const card = this.closest(".card");
+          const productNameElement = card.querySelector(".text-title");
+          const priceElement = card.querySelector(".text-price");
+
+          // Debugging: Log the elements found by the selectors
+          console.log("Product Name Element:", productNameElement);
+          console.log("Price Element:", priceElement);
+
+          // Check if elements are found
+          if (productNameElement && priceElement) {
+            // Get product name and price
+            const productName = productNameElement.textContent;
+            const priceString = priceElement.textContent;
+            // Extract numerical price from the string
+            const priceMatch = priceString.match(/\d+/); // Match any sequence of digits
+            const price = priceMatch ? parseInt(priceMatch[0]) : 0; // Parse matched digits as integer, default to 0 if no match
+
+            console.log("Product Name:", productName);
+            console.log("Price:", price);
+
+            // Store product details in localStorage
+            localStorage.setItem("productName", productName);
+            localStorage.setItem("price", price);
+
+            // Redirect to the checkout page
+            console.log("Redirecting to checkout page...");
+            window.location.href = "checkout.html";
+          } else {
+            console.log("Error: Product name or price element not found.");
+          }
+        });
+      });
+    </script>
+
+    <!-- Script For Seacrch bar and filter button-->
+    <script>
+      function filterProducts() {
+        const input = document.getElementById("input");
+        const filter = input.value.toUpperCase();
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach((card) => {
+          const title = card
+            .querySelector(".text-title")
+            .textContent.toUpperCase();
+          const isVisible = title.indexOf(filter) > -1;
+          card.style.display = isVisible ? "" : "none";
+        });
+      }
+    </script>
+  </body>
+</html>

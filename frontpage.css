@@ -1,0 +1,424 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: montserrat;
+}
+
+label.logo {
+  color: white;
+  font-family: cursive;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 10px;
+  font-weight: italic;
+}
+
+.box {
+  color: #fff;
+  margin: 5%;
+  padding: 70px;
+  border-radius: 3%;
+  background-image: url("https://img.freepik.com/premium-vector/natural-skin-care-abstract-logo-design_278222-1149.jpg?w=360");
+  background-repeat: no-repeat;
+  background-size: 400px 300px;
+  background-position: center;
+}
+
+.slide {
+  font-family: Helvetica, sans-serif;
+  padding: 2%;
+  range: center;
+  width: 100%;
+  font-size: 00;
+}
+
+/* Styling the area of the slides */
+#slideshow {
+  overflow: hidden;
+  align-content: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 5%;
+}
+
+.slide {
+  float: left;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-wrapper {
+  width: 400%; /* Set width to accommodate all slides */
+  height: 500px;
+  display: flex;
+  animation: slide 16s linear infinite; /* Adjusted animation */
+}
+
+.slide:nth-child(1) {
+  background-image: url(https://i.pinimg.com/originals/fe/68/b0/fe68b0d06f84cf664aaac984e6c8cd10.jpg);
+  background-position: center;
+}
+
+.slide:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1598528738936-c50861cc75a9?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+}
+
+.slide:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+}
+
+.slide:nth-child(4) {
+  background-image: url(https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dg);
+  background-position: center;
+}
+
+/* Define the animation for the slideshow */
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0; /* Pause at first slide for 20% of the animation duration */
+  }
+  25% {
+    margin-left: -100%; /* Move to second slide */
+  }
+  45% {
+    margin-left: -100%; /* Pause at second slide for 20% of the animation duration */
+  }
+  50% {
+    margin-left: -200%; /* Move to third slide */
+  }
+  70% {
+    margin-left: -200%; /* Pause at third slide for 20% of the animation duration */
+  }
+  75% {
+    margin-left: -300%; /* Move to fourth slide */
+  }
+  95% {
+    margin-left: -300%; /* Pause at fourth slide for 20% of the animation duration */
+  }
+  100% {
+    margin-left: 0; /* Reset to first slide */
+  }
+}
+.button-container {
+  display: flex;
+}
+.circular-button {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: none;
+  /* overflow: hidden; */
+  background-color: transparent;
+  margin: 4.5%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+
+.circular-button:hover {
+  transform: scale(1.1);
+}
+
+.circular-button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.circular-button:hover .text {
+  opacity: 1;
+}
+
+.text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  background: -webkit-linear-gradient(pink, rgb(245, 134, 156));
+  border-radius: 20px;
+  color: white;
+  text-shadow: 100px;
+  margin-top: 10%;
+}
+
+/* Styling the navigation bar */
+nav {
+  background: #e973a0f2;
+  height: 100px;
+  width: 100%;
+}
+.dropdown {
+  position: absolute;
+  background-color: #ff85ad;
+  border-radius: 10px;
+  display: none;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown li {
+  display: block;
+}
+
+ul li:hover .dropdown {
+  display: block;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+
+nav ul li a:hover {
+  background: #ff85ad;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+nav {
+  color: white;
+  position: left;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+.footer-distributed {
+  background-image: url(https://www.backgroundsy.com/file/preview/pink-waves.jpg);
+  background-size: cover;
+  box-shadow: 0 1px 1px 0 rgb(243, 139, 139);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  background-color: pink;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: rgb(252, 105, 130);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #fc5151;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: rgb(252, 79, 108);
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: rgb(243, 90, 115);
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: rgb(250, 107, 131);
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+.bestselling {
+  border-radius: 200px !important;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: inline-block;
+}
+
+/* CSS for the popup */
+.footer-popup {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.show-popup {
+  display: block; /* Show the popup when this class is applied */
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-Juqo9bPnZDgK6fM5HG9pPmjUJTswOyz4j2ziqZn6vFdCG6tOS6fxqNh6oMdJgs7mFjWJZS8PuK9nR0Kl7wXK8w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SKIN CARE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="frontpage.css" />
+  </head>
+  <body>
+    <nav>
+      <label class="logo">GM SKINCARE</label>
+      <h>Your Skin Deserves The Best</h>
+      <ul>
+        <li>
+          <a href="./frontpage.html">Home</a>
+        </li>
+
+        <li>
+          <a href="#">Products</a>
+          <ul class="dropdown">
+            <li><a href="./product1.html">product</a></li>
+            <li><a href="./product2.html">skin type</a></li>
+            <li><a href="./product3.html">brands</a></li>
+            <li><a href="./product4.html">shop by concern</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" onclick="scrollToFooter()">Contact</a>
+        </li>
+
+        <li>
+          <a href="#" onclick="scrollToFooter()">About</a>
+        </li>
+
+        <li>
+          <a href="./frontpage.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="mailto:gmskincare@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </li>
+        <li>
+          <a href="./loginpage.html"><i class="fa-solid fa-user"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <div class="box" id="box"></div>
+    </div>
+
+    <div id="slideshow">
+      <div class="slide-wrapper">
+        <div class="slide">
+          <h1 class="slide-number"></h1>
+        </div>
+        <div class="slide">
+          <h1 class="slide-number"></h1>
+        </div>
+        <div class="slide">
+          <h1 class="slide-number"></h1>
+        </div>
+        <div class="slide">
+          <h1 class="slide-number"></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button class="circular-button" id="product1">
+        <img
+          src="https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg"
+          alt="button 1"
+        />
+        <h2 class="text">Product</h2>
+      </button>
+
+      <button class="circular-button" id="product2">
+        <img
+          src="https://i.pinimg.com/originals/95/be/26/95be26bee0412aa70da57440b467bf9e.png"
+          alt="button 2 "
+        />
+        <h2 class="text">Skin type</h2>
+      </button>
+
+      <button class="circular-button" id="product3">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="button 3"
+        />
+        <h2 class="text">Brands</h2>
+      </button>
+
+      <button class="circular-button" id="product4">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCI1TVIRhIYarRiAtpMMf9UIk5kpH-2zJPVA&usqp=CAU"
+          alt="button 4"
+        />
+        <h2 class="text">Shop by concern</h2>
+      </button>
+    </div>
+
+    <!-- Best Selling Product page -->
+    <iframe
+      src="bestselling.html"
+      class="bestselling"
+      frameborder="0"
+      width="100%"
+      height="2500"
+      allowtransparency="true"
+      style="border-radius: 10px"
+      scrolling="no"
+    ></iframe>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>skin<span>care</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+
+          <a href="#">Blog</a>
+
+          <a href="#">Pricing</a>
+
+          <a href="#">About</a>
+
+          <a href="#">Faq</a>
+
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Manasvi Gauri Skin Care</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Pune, Uruli Kanchan</span> 412202</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>8668843763</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@company.com">gmskincare@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span> About the company</span>
+          We Provide different types of skincare products for different skin
+          types and concerns. We also provide products from different brands. We
+          also provide blogs for skincare tips and tricks.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script for Scrolling to footer when click on contact -->
+    <script>
+      function scrollToFooter() {
+        var footer = document.querySelector(".footer-distributed");
+        footer.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+
+    <!-- Script For Product Page Redirect -->
+    <script>
+      document
+        .querySelector("#product1")
+        .addEventListener("click", function () {
+          window.location.href = "./product1.html";
+        });
+    </script>
+
+    <!-- Script For Skin Type Page Redirect -->
+    <script>
+      document
+        .querySelector("#product2")
+        .addEventListener("click", function () {
+          window.location.href = "./product2.html";
+        });
+    </script>
+
+    <!-- Script For Brand Page Redirect -->
+    <script>
+      document
+        .querySelector("#product3")
+        .addEventListener("click", function () {
+          window.location.href = "./product3.html";
+        });
+    </script>
+
+    <!-- Script For Shop By Concern Page Redirect -->
+    <script>
+      document
+        .querySelector("#product4")
+        .addEventListener("click", function () {
+          window.location.href = "./product4.html";
+        });
+    </script>
+  </body>
+</html>

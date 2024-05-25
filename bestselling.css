@@ -1,0 +1,199 @@
+.box {
+  background-color: pink;
+  height: 80%;
+  width: auto;
+}
+
+section {
+  padding: 100px 0px;
+}
+img {
+  width: 100%;
+}
+
+.mbl-btn i {
+  color: #75b61a;
+}
+
+.head-text {
+  text-align: left;
+}
+
+img.head-img {
+  width: 500px;
+}
+
+h1 {
+  color: rgb(212, 102, 121);
+  padding: 2%;
+  font-family: cursive;
+  font-size: 10%;
+}
+
+p {
+  color: rgb(131, 60, 72);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.my-btn:hover {
+  background: rgb(224, 60, 87);
+  color: white;
+}
+
+.card-title {
+  color: rgb(185, 53, 75);
+  font-size: 2.3em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.small-desc {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: white;
+  font-family: italic;
+}
+
+.small-desc {
+  font-size: 1em;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, rgb(247, 143, 160), rgb(224, 74, 99));
+  border-radius: 0 4px 0 32px;
+}
+
+.card {
+  display: block;
+  position: relative;
+  max-width: 800px;
+  max-height: 320px;
+  background-color: #f2f8f9;
+  border-radius: 10px;
+  padding: 2em 1.2em;
+  margin: 0px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(250, 153, 169), rgb(209, 94, 113));
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(135deg, rgb(233, 64, 92), rgb(185, 65, 85));
+  height: 40px;
+  width: 40px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.4s ease-out;
+}
+
+.card:hover:before {
+  transform: scale(28);
+}
+
+.card:hover .small-desc {
+  transition: all 0.5s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card:hover .card-title {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
+
+.head-img {
+  width: 100%;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(10px 10px 20px rgb(83, 33, 42));
+}
+
+.head-img:hover {
+  transform: scale(1.1);
+}
+
+/* Customer Review */
+
+.carousel-item {
+  text-align: center;
+  padding: 50px;
+}
+h2 {
+  margin-left: 40%;
+  font-size: 4%;
+  color: rgb(182, 96, 110);
+}
+
+.customer-review {
+  background-color: rgb(240, 134, 151);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.customer-image:hover {
+  transform: scale(1.1);
+}
+
+.customer-review h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.customer-review p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  color: #212529;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #212529;
+  opacity: 0.5;
+}
+
+h3 {
+  color: white;
+}
+
+.carousel-item p {
+  color: white;
+}

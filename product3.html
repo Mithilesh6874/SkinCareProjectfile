@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="product3.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Brands</title>
+  </head>
+  <body>
+    <label class="logo">GM SKINCARE</label>
+    <div class="InputContainer">
+      <input
+        placeholder="Search.."
+        id="input"
+        class="input"
+        name="text"
+        type="text"
+        oninput="filterProducts()"
+      />
+    </div>
+    <div class="heading">
+      <h>Mamaearth Skin Care Products</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTnOnlOY2YNch1lxPMCrUcQpqFSG2YIpPlakDikI_yBAy-xvgeRcij0KtFfsyGf7taiijby0h4Yhp_EJEtxr7hMn_2TsVRsbCgHAVP_N_2l&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Mamaearth skin care hasper</p>
+              <p class="text-body">
+                 nourishing skin care products
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">2100 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQkWIlXs0z-FsPfvkWqs2w9uHy4po7b4hdliNrHr3WuodE1RmTL9tWoi7jjIvvDgckvxhk9sIU709EMolLP5IW4lsuxC9y6gbXFmVbQ5gHM3E3oAskfzv6XxQ&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Mamaearth beetroot hydraful moisturizer</p>
+              <p class="text-body">30ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">400 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcReWx_6kCYtMjBM7Q5KGq45-Ln9Q5nt0ceGS9YNKGjvWfoLxy048u2y6H21EN9swdM-60KZ6xQe7Z9VnJLV0fFXwhsdx5pU_fhX86b7ohRHQfmfZ-aO8LYCxQ&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Mamaearth Face Wash</p>
+              <p class="text-body">520 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">1200 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR2x_nxx4r1mHCqmVW3_qYK0zPMgqU2D9t3KrwKZ02iFwocMMIw05fqtPLYfugC8kNzNIqIMsmuD-R9ZyImYbJx2NbVtCJl8gpuLofUQ3u9&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Mamaearth mini combo</p>
+              <p class="text-body">3 product</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">1420 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="heading1">
+      <h>Himalaya Skin Care Products</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR89ALEQW13nPJjJHw-caN15qqB-qOKhl3s6cTBStDP5areQlQmktA6EnwFltCczP8JRRZa117oRBnzRvBdy92TcX0ItIT8B9LQ81kji7x9f-hSOm1zAF0WKQ&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Himalaya Baby Cream</p>
+              <p class="text-body">380 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">200 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQu85KEU4VswgR0_GrW4wPPXN6oPIg1QAwhwTGOlXrokDV0HxLqhle3lJI-zQIjxz4n85cL--ScWNqrwaKKDUxkMGmF9QKnKmPnNpfORHO15LoYcGtwTaUSVw&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Himalaya Face Cream</p>
+              <p class="text-body">30 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">450 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQdv9iiMAlG13mZD_h_2TPLJbuSjf4phb35jhXqDlzZWrXtvo1JN19-3VdECtnJw41rBTKDSW-gVAVs6WHhgvhMD1kU3mNBjlhn9aoTKUkFO24NXm8RrynkeA&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Kesar Face Pack</p>
+              <p class="text-body">380 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">700 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQksRLW2NsXC6XNHIgiPBTgXt9-YGbkRLqmawFIYK7QhfgZLvydAvuywLfz2MJIkCtVZ1MZYOBKJeKetjStgq2DzxSfXnpwlUetAezPtK8SWDUprA_gqN3F7g&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Orange Face Wash</p>
+              <p class="text-body">30 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">620 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading1">
+      <h>Ayur Skin Care Product</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS9hLY8yhudnpwZsD_Jya85yYPA0G_7p61CoCbhax6JIStgS9ZatH7_CpKYAUnit5CGyKVSRn9fElVBiteg8hKK096d9GKM7TX5_O2BsuVPYLl0WhaDZIeaNw&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Ayur Cleansing Milk</p>
+              <p class="text-body">70ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">2000 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQmItxyg4DzVXGRPf6HumEfjh2UQY7B1eEVxnC_9MajRT-1sH0H-gvMde2OfqpPbWceD0fJblY8r2qzpmAocKL8wofxL-CjQI27-A12ZFiRIfYVwbbpeMgB&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Ayur Moisturizer</p>
+              <p class="text-body">200ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">800 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQzFRwKuMwn9A_wEslY-OGdNsWdO675qrpqiTsL8MHp_V2fcM7J49TSgyv1nbNGPZkFQXTJM6bjsv_oiVKuoevq2oO3T3PtDoexkaThRt5c&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Ayur Kit</p>
+              <p class="text-body">Ayur Skin Care Kit</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">2000 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSG5V3cqj4lQPBsH2qjm3BFkW1imiQfjkTMOtZ-9vysaGyJbautH9TpVSDT7cR8a-QSQv3qp-DqRJPi-_jSrJyzMWJzwxww6QrfrrpUlXQQRbbGSie-T14&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Ayur Skin Toner</p>
+              <p class="text-body">200 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">400 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading1">
+      <h>Vaseline Skin Care Product</h>
+    </div>
+    <section>
+      <div>
+        <div class="card-container">
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT5JycQiC3JiLJhKFKFB-Ke1D2pT603vkkvbo1ilYPNCly7Tn7GfB2OtLNYN73qyfIxrp_CPv_C_72t-7UQyE8m3gWNnYWbyHPqzCuV31kLD4htyZRwYGgB&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Vaseline coco glow lotion</p>
+              <p class="text-body">125 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">375 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTUwUHztRw7mCBf3m1Tt7Li2BDjK4XtBroTRGMZACbVHB_VxmnBrsOoC4846Pb753K-fuzcFSe7V_mi97bQfXpYqILkMU3WYMc7fNfOU5fi6zQj_DsPg_-rsg&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Vaseline Serum</p>
+              <p class="text-body">125 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">300 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSaBYQcyDoIA0lQcOefte7fyGdJdoLf-zmbI5f7oYKOMWVrOU8tp_pbdhDpwr2lcVLYTGBtBPeZlP010WRq9V3O8P2G0UBwfBYmXtw2HwjYQoSN4aoBGIWT&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Vaseline Sun Protection</p>
+              <p class="text-body">200 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">400 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-img"
+              style="
+                background-image: url(https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT0wkYLOAJ-b2PwHD870-F7pyssWwiSoLgE9uNxKEqCNelE2PYHHLRtvIqgdvQknUaq8UfTtp9CAU6ivdcV2lC9nDMEiFH_oDnIn3UclNNrPKMjFOod95kJ&usqp=CAE);
+              "
+            ></div>
+            <div class="card-info">
+              <p class="text-title">Vaseline Active Friming</p>
+              <p class="text-body">70 ml</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-price">500 rs</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"
+                  ></path>
+                  <path
+                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"
+                    class="heart"
+                  ></path>
+                  <path
+                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script for the redirect checkout page -->
+    <script>
+      // Select all SVG icons with class "svg-icon"
+      const svgIcons = document.querySelectorAll(".svg-icon");
+      // Loop through each SVG icon
+      svgIcons.forEach((svgIcon) => {
+        // Add click event listener to each SVG icon
+        svgIcon.addEventListener("click", function () {
+          // Find the product details relative to the clicked SVG icon
+          const card = this.closest(".card");
+          const productNameElement = card.querySelector(".text-title");
+          const priceElement = card.querySelector(".text-price");
+
+          // Debugging: Log the elements found by the selectors
+          console.log("Product Name Element:", productNameElement);
+          console.log("Price Element:", priceElement);
+
+          // Check if elements are found
+          if (productNameElement && priceElement) {
+            // Get product name and price
+            const productName = productNameElement.textContent;
+            const priceString = priceElement.textContent;
+            // Extract numerical price from the string
+            const priceMatch = priceString.match(/\d+/); // Match any sequence of digits
+            const price = priceMatch ? parseInt(priceMatch[0]) : 0; // Parse matched digits as integer, default to 0 if no match
+
+            console.log("Product Name:", productName);
+            console.log("Price:", price);
+
+            // Store product details in localStorage
+            localStorage.setItem("productName", productName);
+            localStorage.setItem("price", price);
+
+            // Redirect to the checkout page
+            console.log("Redirecting to checkout page...");
+            window.location.href = "checkout.html";
+          } else {
+            console.log("Error: Product name or price element not found.");
+          }
+        });
+      });
+    </script>
+
+    <!-- Script For Seacrch bar and filter button-->
+    <script>
+      function filterProducts() {
+        const input = document.getElementById("input");
+        const filter = input.value.toUpperCase();
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach((card) => {
+          const title = card
+            .querySelector(".text-title")
+            .textContent.toUpperCase();
+          const isVisible = title.indexOf(filter) > -1;
+          card.style.display = isVisible ? "" : "none";
+        });
+      }
+    </script>
+  </body>
+</html>

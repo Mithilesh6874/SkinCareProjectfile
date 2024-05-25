@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="checkout.css" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <div class="master-container">
+      <div class="card cart">
+        <label class="title">Your cart</label>
+        <div class="products" id="cart-products">
+          <!-- Product details will be dynamically added here -->
+        </div>
+      </div>
+
+      <div class="card coupons">
+        <label class="title">Apply coupons</label>
+        <form class="form">
+          <input
+            type="text"
+            placeholder="Apply your coupons here"
+            class="input_field"
+          />
+          <button id="apply-coupon-btn">Apply</button>
+        </form>
+      </div>
+
+      <div class="card checkout" id="checkout-details">
+        <!-- Checkout details will be dynamically added here -->
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const productName = localStorage.getItem("productName");
+        const price = localStorage.getItem("price");
+        if (productName && price) {
+          addProductToCart(productName, price);
+        }
+      });
+
+      function addProductToCart(productName, price) {
+        const cartProducts = document.getElementById("cart-products");
+        const productDiv = document.createElement("div");
+        productDiv.classList.add("product");
+        const productInfo = document.createElement("div");
+        productInfo.innerHTML = `
+        <div>
+          <span>${productName}</span>
+        </div>
+        <div class="quantity">
+          <button class="decrement">-</button>
+          <label>1</label>
+          <button class="increment">+</button>
+        </div>
+        <label class="price small">${price}rs</label>
+      `;
+        productDiv.appendChild(productInfo);
+        cartProducts.appendChild(productDiv);
+        updateCheckout();
+
+        // Add event listeners for quantity buttons
+        const incrementButton = productDiv.querySelector(".increment");
+        const decrementButton = productDiv.querySelector(".decrement");
+        incrementButton.addEventListener("click", function () {
+          increaseQuantity(productDiv, price);
+        });
+        decrementButton.addEventListener("click", function () {
+          decreaseQuantity(productDiv, price);
+        });
+      }
+
+      function decreaseQuantity(productDiv, price) {
+        const quantityLabel = productDiv.querySelector(".quantity label");
+        let currentQuantity = parseInt(quantityLabel.textContent);
+        if (currentQuantity > 1) {
+          currentQuantity--;
+          quantityLabel.textContent = currentQuantity;
+        } else {
+          productDiv.remove();
+        }
+        updateCheckout();
+      }
+
+      function increaseQuantity(productDiv, price) {
+        const quantityLabel = productDiv.querySelector(".quantity label");
+        const currentQuantity = parseInt(quantityLabel.textContent);
+        quantityLabel.textContent = currentQuantity + 1;
+        updateCheckout();
+      }
+
+      function updateCheckout() {
+        const cartProducts = document.querySelectorAll(".product");
+        let subtotal = 0;
+        cartProducts.forEach((product) => {
+          const quantity = parseInt(
+            product.querySelector(".quantity label").textContent
+          );
+          const price = parseInt(product.querySelector(".price").textContent);
+          subtotal += quantity * price;
+        });
+        const shippingFee = 50;
+        const total = subtotal + shippingFee;
+        const checkoutDetails = document.getElementById("checkout-details");
+        checkoutDetails.innerHTML = `
+        <label class="title">Checkout</label>
+        <div class="details">
+          <span>Your cart subtotal:</span>
+          <span>${subtotal}rs</span>
+          <span>Discount through applied coupons:</span>
+          <span>0rs</span>
+          <span>Shipping fees:</span>
+          <span>${shippingFee}rs</span>
+        </div>
+        <div class="checkout--footer">
+          <label class="price"><sup>.</sup>${total}rs</label>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      `;
+
+        // Add event listener to the checkout button
+        const checkoutButton = checkoutDetails.querySelector(".checkout-btn");
+        checkoutButton.addEventListener("click", function () {
+          // Redirect to the "buyporduct" page
+          window.location.href = "./buyproduct.html";
+        });
+      }
+    </script>
+  </body>
+</html>
